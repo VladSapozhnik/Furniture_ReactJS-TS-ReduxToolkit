@@ -1,0 +1,18 @@
+.basket {
+
+  &_name {
+    @include icon-style(30px, false, false, true, basket-logo);
+    @include text-size(18);
+    padding-left: 35px;
+    cursor: pointer;
+    @include point(lg-xs) {
+      margin-right: 0;
+    }
+  }
+  &_btn {
+    @include btn-style(14px 46px);
+    @include point(lg-xs) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.social {
+  @include text-size(18);
+  @include point(hd-xs) {
+    margin-right: 25px;
+  }
+  &-list {
+    &_link {
+      width: 40px;
+      height: 40px;
+      @include point(hd-xs) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

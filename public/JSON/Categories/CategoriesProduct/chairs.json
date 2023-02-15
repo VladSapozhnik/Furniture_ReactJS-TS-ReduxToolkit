@@ -1,0 +1,62 @@
+[
+  {
+    "id": 13,
+    "src": "1.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Крісло Рамона",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 14,
+    "src": "2.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Крісло Честер",
+    "price": 8999,
+    "stockPrice": 8999
+  },
+  {
+    "id": 15,
+    "src": "3.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Крісло Венеція люкс",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 16,
+    "src": "4.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Крісло Імперія",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 17,
+    "src": "5.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Крісло Адель",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 18,
+    "src": "6.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Крісло Атлант",
+    "price": 8999,
+    "stockPrice": 8999
+  }
+]

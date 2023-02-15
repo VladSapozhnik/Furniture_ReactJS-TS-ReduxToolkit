@@ -1,0 +1,37 @@
+.footer-contacts {
+  @include text-size(18, 400);
+  color: #FFFFFF;
+  &_marker {
+    @include icon-style(19.5px, false, false, true, "map-icon", 23.5px);
+    padding-left: 27px;
+    margin-bottom: 15px;
+  }
+  &_calendar {
+    @include icon-style(19.5px, false, false, true, "calendar-icon", 21.5px);
+    padding-left: 27px;
+    margin-bottom: 15px;
+  }
+  &_tel {
+    @include icon-style(24px, false, false, true, "footer-phone-icon");
+    @include point(md-xs) {
+      margin-bottom: 15px;
+    }
+    a {
+      color: $green;
+      font-weight: 700;
+    }
+    &::before {
+      top: 10px;
+    }
+    padding-left: 27px;
+  }
+}
+
+.footer_social {
+  align-items: flex-start;
+  color: #FFFFFF;
+  img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+
+  }
+}

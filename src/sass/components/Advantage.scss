@@ -1,0 +1,26 @@
+.advantage {
+  margin-bottom: 130px;
+  &_title {
+    @include title-h2(52px);
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    &:after {
+      font-size: 12px;
+      color: #fff;
+    }
+
+    &.swiper-button-disabled {
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      opacity: 1;
+      &:after {
+        color: #1E2E36;
+      }
+    }
+  }
+}

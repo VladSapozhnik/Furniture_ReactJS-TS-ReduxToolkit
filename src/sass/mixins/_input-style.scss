@@ -1,0 +1,32 @@
+@mixin input-style($marginbottom: 0) {
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: $marginbottom;
+  input {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 5px;
+    &:valid,
+    &:focus {
+      & ~ span {
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        line-height: 150%;
+        opacity: 0.6;
+      }
+    }
+  }
+  span {
+    position: absolute;
+    transition: all .3s;
+    left: 0;
+    bottom: 5px;
+    pointer-events: none;
+  }
+}

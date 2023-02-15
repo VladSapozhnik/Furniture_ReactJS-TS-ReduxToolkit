@@ -1,0 +1,39 @@
+//Media breakpoints
+$points: (
+    st: 320,
+    xs: 375,
+    psw: 412,
+    sm: 480,
+    ms: 640,
+    md: 960,
+    def: 1024,
+    lg: 1280,
+    xl: 1366,
+    mg: 1440,
+    hd: 1600,
+    dt: 1920
+);
+
+$green: #44C697;
+$dark: #1E2E36;
+
+//header
+$h2-color: $dark;
+
+//Font families
+$font-family: 'Proxima Nova';
+
+//PARAGRAPH STYLES
+$paragraph-margin: 25px; //margin-bottom
+$font-size-paragraph: 24px;
+$paragraph-height: 1.5;
+
+
+
+//LINK
+$list-image: false; //list.png
+$background-color: #fff;
+$link-color: $dark;
+$link-hover-color: false;
+
+

@@ -1,0 +1,56 @@
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 350px;
+  padding: 30px 33px;
+  box-sizing: border-box;
+  //cursor: pointer;
+  @include point(ms-xs) {
+    height: 280px;
+  }
+
+  &_pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &_title {
+    @include text-size(36);
+    color: #FFFFFF;
+    width: max-content;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      display: block;
+      background-color: $green;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &_description {
+    @include text-size(18, 400);
+    color: #FFFFFF;
+    height: auto;
+    max-height: 0;
+    margin-top: 15px;
+    overflow: hidden;
+    transition: all .3s;
+  }
+
+  &:hover {
+    .advantage-item_description {
+      max-height: 100%;
+    }
+  }
+}

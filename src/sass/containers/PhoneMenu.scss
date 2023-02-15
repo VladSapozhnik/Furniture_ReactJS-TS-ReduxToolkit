@@ -1,0 +1,24 @@
+.dropdown {
+  @include icon-style(24px, true, array, true, phone);
+  @include text-size(18);
+  padding-left: 29px;
+  @include point(ms-xs) {
+    display: none;
+  }
+  &-content {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+  }
+  &:hover {
+    .dropdown-content {
+      display: flex;
+    }
+  }
+}

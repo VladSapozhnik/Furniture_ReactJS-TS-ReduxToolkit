@@ -1,0 +1,21 @@
+@mixin btn-style($btn-padding:0, $typeBtn: null) {
+  width: max-content;
+  padding: $btn-padding;
+  background: $green;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include text-size(18);
+  color: #FFFFFF;
+  @include point(hd-ms) {
+    padding: 10px 25px;
+  }
+  //@include point(ms-xs) {
+  //  font-size: 12px;
+  //}
+  @if $typeBtn == true {
+    display: flex;
+  }
+}

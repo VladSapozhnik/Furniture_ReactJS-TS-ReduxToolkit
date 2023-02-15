@@ -1,0 +1,68 @@
+.categories-product {
+  //width: calc(33.333% - 30px);
+  //margin: 0 15px 50px;
+  //@include grid-elements(3, 15px);
+  box-sizing: border-box;
+  cursor: pointer;
+  &_pic {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    .product-info {
+      background-color: $green;
+      color: #fff !important;
+    }
+
+    .product-price_stock,
+    .product-price_current {
+      color: #fff !important;
+    }
+  }
+}
+
+.product-label {
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    @include text-size(18);
+    color: #FFFFFF;
+  }
+  span + span {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+
+  &_new,
+  &_hit-stock {
+    background-color: $dark;
+  }
+
+  &_stock {
+    background-color: #FF1B1B;
+  }
+}
+
+.product-info {
+  padding: 15px;
+  text-transform: uppercase;
+  transition: background-color .3s;
+  @include text-size(24);
+}
+
+.product-price {
+  &_stock {
+    color: #FF1B1B;
+  }
+
+  &_current {
+    &.active {
+      text-decoration-line: line-through;
+      @include text-size(18);
+      color: #BCBDBB;
+    }
+  }
+}

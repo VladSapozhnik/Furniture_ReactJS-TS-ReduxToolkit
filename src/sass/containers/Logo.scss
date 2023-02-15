@@ -1,0 +1,18 @@
+.logo {
+  &_pic {
+    width: 125px;
+    margin-right: 15px;
+    @include point(hd-ms) {
+      width: 80px;
+    }
+    @include point(ms-xs) {
+      width: 60px;
+    }
+  }
+  &_name {
+    @include text-size(36);
+    &:first-letter {
+      color: $green;
+    }
+  }
+}

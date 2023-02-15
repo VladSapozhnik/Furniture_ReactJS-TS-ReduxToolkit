@@ -1,0 +1,26 @@
+.footer-menu {
+  color: #fff;
+  @include point(ms-xs) {
+   justify-content: space-between;
+  }
+}
+
+._line-list-footer {
+  position: relative;
+  padding-left: 21px;
+  @include text-size(18);
+  & + & {
+    margin-top: 15px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: $green;
+  }
+}

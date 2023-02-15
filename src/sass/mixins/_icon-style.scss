@@ -1,0 +1,34 @@
+@mixin icon-style($sizeW: 0, $right: false, $rightImages: false, $left: false, $leftImages: false, $sizeH: $sizeW) {
+  position: relative;
+  @if $right == true {
+    padding-right: 29px;
+    &::after {
+      content: '';
+      display: block;
+      background-image: url("../../images/" + $rightImages + ".svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      width: $sizeW;
+      height: $sizeH;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  @if $left == true {
+    &::before {
+      content: '';
+      display: block;
+      background-image: url("../../images/" + $leftImages + ".svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      width: $sizeW;
+      height: $sizeH;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

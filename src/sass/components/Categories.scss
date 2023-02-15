@@ -1,0 +1,33 @@
+.categories {
+  margin-bottom: 100px;
+  &_title {
+    @include title-h2(50px);
+  }
+  &_select {
+    //@include grid-elements(6, 15px);
+    margin-bottom: 67px;
+    padding-bottom: 20px !important;
+    @include point(md-xs) {
+      margin-bottom: 40px;
+    }
+    .swiper-pagination-bullets {
+      bottom: 0 !important;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $green !important;
+    }
+  }
+  &_products {
+    //margin: 0 -15px;
+    @include grid-elements(3, 15px, 50px);
+    @include point(hd-md) {
+      @include grid-elements(2, 15px, 50px);
+    }
+    @include point(md-xs) {
+      @include grid-elements(1, 15px, 20px);
+    }
+  }
+  &_btn {
+    @include btn-style(14px 46px);
+  }
+}

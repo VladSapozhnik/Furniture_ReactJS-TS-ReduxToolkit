@@ -1,0 +1,14 @@
+.header {
+  background-color: #fff;
+}
+
+.open-popup {
+  @include burger-menu-icon(lg);
+}
+
+.header-above {
+  border-bottom: 1px solid #1E2E36;
+  .open-popup {
+    margin-left: auto;
+  }
+}

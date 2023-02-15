@@ -1,0 +1,14 @@
+@mixin grid-elements($elements: 0, $marginX, $marginY: 0) {
+  //$gap: $gapX - 1;
+  //--elements: $elements;
+  //display: flex;
+  //width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (0 - $marginX);
+  & > div {
+    width: calc((100% / $elements - ($marginX * 2)));
+    margin: 0 $marginX $marginY;
+  }
+  //gap: $gapY $gapX;
+}

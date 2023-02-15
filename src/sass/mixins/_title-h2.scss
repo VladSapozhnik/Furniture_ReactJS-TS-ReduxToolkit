@@ -1,0 +1,24 @@
+@mixin title-h2($title-margin:0, $align-title: left){
+  //margin-bottom: $title-margin;
+  width: max-content;
+  margin: 0 auto $title-margin;
+  padding-left: 5px;
+  position: relative;
+  font-family: $font-family;
+  @include text-size(48);
+  color: $dark;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $green;
+    display: block;
+    z-index: -1;
+  }
+}

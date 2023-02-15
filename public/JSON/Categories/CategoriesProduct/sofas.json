@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "src": "1.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Диван Рамона",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 2,
+    "src": "2.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Диван Честер",
+    "price": 8999,
+    "stockPrice": 8999
+  },
+  {
+    "id": 3,
+    "src": "3.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Диван Венеція люкс",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 4,
+    "src": "4.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Диван Імперія",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 5,
+    "src": "5.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Диван Адель",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 6,
+    "src": "6.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Диван Атлант",
+    "price": 8999,
+    "stockPrice": 8999
+  }
+]

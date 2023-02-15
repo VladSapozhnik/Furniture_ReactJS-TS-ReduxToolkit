@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: (1818 + 54px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 27px;
+    padding-right: 27px;
+    //@include point(lg-down){
+    //    max-width: 100%;
+    //}
+    //@include point(xl-lg) {
+    //    width: 1240px;
+    //}
+    //@include point(lg-def) {
+    //    width: 990px;
+    //}
+    //@include point(def-down){
+    //    width: 100%;
+    //}
+}
+.container-small {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 753px;
+    max-width: 100%;
+}

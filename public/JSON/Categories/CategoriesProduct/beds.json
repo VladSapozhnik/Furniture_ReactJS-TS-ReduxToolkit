@@ -1,0 +1,62 @@
+[
+  {
+    "id": 7,
+    "src": "1.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Ліжко Рамона",
+    "price": 3399,
+    "stockPrice": null
+  },
+  {
+    "id": 8,
+    "src": "2.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Ліжко Честер",
+    "price": 2229,
+    "stockPrice": 1229
+  },
+  {
+    "id": 9,
+    "src": "3.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Ліжко Венеція люкс",
+    "price": 5556,
+    "stockPrice": null
+  },
+  {
+    "id": 10,
+    "src": "4.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Ліжко Імперія",
+    "price": 4579,
+    "stockPrice": null
+  },
+  {
+    "id": 11,
+    "src": "5.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Ліжко Адель",
+    "price": 6577,
+    "stockPrice": null
+  },
+  {
+    "id": 12,
+    "src": "6.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Ліжко Атлант",
+    "price": 7789,
+    "stockPrice": 5678
+  }
+]

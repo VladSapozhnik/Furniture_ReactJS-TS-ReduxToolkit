@@ -1,0 +1,88 @@
+.footer {
+  background-color: $dark;
+  color: #FFFFFF;
+
+  &-content {
+    padding: 50px 56px 13px 51px;
+    @include point(hd-xl) {
+      width: 60%;
+    }
+    @include point(xl-ms) {
+      width: 80%;
+    }
+    @include point(ms-xs) {
+      width: 100%;
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+  }
+  &_pic {
+    @include point(hd-xl) {
+      width: 40%;
+    }
+    @include point(xl-ms) {
+      width: 20%;
+    }
+    @include point(ms-xs) {
+      display: none;
+    }
+  }
+  &-menu {
+    @include point(md-ms) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    &_product {
+      @include point(md-xs) {
+        margin-bottom: 30px;
+        margin-right: 10px;
+      }
+    }
+    &_category {
+      margin-right: 87px;
+      @include point(md-xs) {
+        margin-bottom: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  &_arrow-top {
+    top: -10px;
+    left: 36px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green;
+    background-image: url("../../images/arrow-top.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  a {
+    color: #FFFFFF;
+  }
+  .logo {
+    &_name {
+      color: #FFFFFF;
+    }
+  }
+  &-info {
+    @include text-size(14, 400);
+    color: #FFFFFF;
+    @include point(md-ms) {
+      flex-direction: column-reverse;
+    }
+    @include point(ms-xs) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &_name {
+      padding-left: 23px;
+      @include icon-style(20px, false, false, true, "glossiness", 21px);
+      font-family: 'Cuprum';
+      @include point(md-xs) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.about-content {
+  max-width: 806px;
+  padding: 50px 45px 50px 51px;
+  @include line-green(right);
+  @include text-size(18, 400);
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  @include point(def-xs) {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    transform: translateY(0);
+    padding: 27px;
+    &::before {
+      display: none;
+    }
+  }
+  &_text {
+    span {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $green;
+    }
+    & + & {
+      margin-top: 15px;
+    }
+  }
+}

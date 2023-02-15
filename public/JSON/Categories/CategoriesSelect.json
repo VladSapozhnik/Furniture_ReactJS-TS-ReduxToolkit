@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "src": "1.svg",
+    "title": "Дивани",
+    "name": "sofas"
+  },
+  {
+    "id": 2,
+    "src": "2.svg",
+    "title": "Ліжка",
+    "name": "beds"
+  },
+  {
+    "id": 3,
+    "src": "3.svg",
+    "title": "Крісла",
+    "name": "chairs"
+  },
+  {
+    "id": 4,
+    "src": "4.svg",
+    "title": "Комоди",
+    "name": "dressers"
+  },
+  {
+    "id": 5,
+    "src": "5.svg",
+    "title": "Шафи",
+    "name": "wardrobe"
+  },
+  {
+    "id": 6,
+    "src": "6.svg",
+    "title": "Кухня",
+    "name": "kitchen"
+  }
+]

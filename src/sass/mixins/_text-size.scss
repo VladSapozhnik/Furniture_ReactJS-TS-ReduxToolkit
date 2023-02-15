@@ -1,0 +1,63 @@
+@mixin text-size($size: 18, $fontWeight: 700) {
+  line-height: 125%;
+  color: $dark;
+  font-weight: $fontWeight;
+  @if $size == 14 {
+    font-size: 14px;
+    line-height: 16px;
+    @include point(hd-ms) {
+      font-size: 12px;
+    }
+    @include point(ms-xs) {
+      font-size: 8px;
+    }
+  }
+
+  @if $size == 18 {
+    font-size: 18px;
+    @include point(hd-ms) {
+      font-size: 16px;
+    }
+    @include point(ms-xs) {
+      font-size: 12px;
+    }
+  }
+  @if $size == 24 {
+    font-size: 24px;
+    @include point(hd-ms) {
+      font-size: 18px;
+    }
+    @include point(ms-xs) {
+      font-size: 14px;
+    }
+  }
+  @if $size == 36 {
+    font-size: 36px;
+    @include point(hd-ms) {
+      font-size: 26px;
+    }
+    @include point(ms-xs) {
+      font-size: 24px;
+    }
+  }
+  @if $size == 48 {
+    font-size: 48px;
+    @include point(hd-ms) {
+      font-size: 38px;
+    }
+    @include point(ms-xs) {
+      font-size: 28px;
+    }
+  }
+
+  @if $size == 64 {
+    font-size: 64px;
+    line-height: 100%;
+    @include point(hd-ms) {
+      font-size: 44px;
+    }
+    @include point(ms-xs) {
+      font-size: 34px;
+    }
+  }
+}

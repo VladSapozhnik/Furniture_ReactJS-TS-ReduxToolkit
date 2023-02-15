@@ -1,0 +1,19 @@
+.menu {
+  @include list-reset(0 0 0 auto);
+  @include not-last-child('li') {
+    margin-right: 15px;
+    padding-bottom: 6px;
+  }
+  @include point(lg-xs) {
+    display: none;
+  }
+  &_item {
+    position: relative;
+    @include text-size(18);
+    &:hover {
+      &::after {
+        @include hover-style;
+      }
+    }
+  }
+}

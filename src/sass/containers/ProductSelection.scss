@@ -1,0 +1,25 @@
+.product-selection {
+  @include not-last-child('li') {
+    margin-right: 15px;
+  }
+  @include point(lg-xs) {
+    display: none;
+  }
+  &_item {
+    @include icon-style(20px, true, array);
+    @include text-size(18);
+  }
+}
+
+.product-subselection {
+  display: none;
+  background: #FFFFFF;
+  padding: 30px;
+  width: 170px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  &_item {
+    padding: 5px 0;
+    border-bottom: 1px solid $dark;
+  }
+}

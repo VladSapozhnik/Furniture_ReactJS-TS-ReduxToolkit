@@ -1,0 +1,45 @@
+.contacts-content {
+  max-width: 528px;
+  padding: 50px 51px 50px 45px;
+  @include line-green(left);
+  @include text-size(18, 400);
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-sizing: border-box;
+  @include point(def-xs) {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    transform: translateY(0);
+    padding: 27px;
+    &::before {
+      display: none;
+    }
+  }
+  &_title {
+    @include text-size(36);
+  }
+
+  &-form {
+    &_btn {
+      @include btn-style(14px 0);
+      width: 100%;
+    }
+  }
+
+  &_info {
+    max-width: 395px;
+    @include text-size(18, 400);
+    @include point(def-xs) {
+      max-width: 100%;
+      text-align: center;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+

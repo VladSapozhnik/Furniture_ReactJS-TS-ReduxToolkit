@@ -1,0 +1,62 @@
+[
+  {
+    "id": 31,
+    "src": "1.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Кухня Рамона",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 32,
+    "src": "2.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Кухня Честер",
+    "price": 3999,
+    "stockPrice": 2999
+  },
+  {
+    "id": 33,
+    "src": "3.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Кухня Венеція люкс",
+    "price": 5999,
+    "stockPrice": null
+  },
+  {
+    "id": 34,
+    "src": "4.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Кухня Імперія",
+    "price": 6559,
+    "stockPrice": null
+  },
+  {
+    "id": 35,
+    "src": "5.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Кухня Адель",
+    "price": 3556,
+    "stockPrice": null
+  },
+  {
+    "id": 36,
+    "src": "6.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Кухня Атлант",
+    "price": 2223,
+    "stockPrice": 1290
+  }
+]

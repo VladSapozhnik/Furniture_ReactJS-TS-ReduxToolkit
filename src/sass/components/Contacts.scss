@@ -1,0 +1,28 @@
+.contacts {
+  margin-bottom: 109px;
+  &_title {
+    @include title-h2(50px);
+  }
+
+  &-holder {
+    @include point(def-xs) {
+      flex-direction: column-reverse;
+    }
+    &_pic {
+      height: 675px;
+      @include point(hd-xl) {
+        height: 600px;
+      }
+      @include point(xl-def) {
+        height: 500px;
+      }
+      @include point(def-xs) {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
+
+
+

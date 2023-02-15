@@ -1,0 +1,17 @@
+@mixin p-style($margin: 0, $children: false) {
+  //font-size: $font-family;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  @include point(xs-hd) {
+    font-size: 18px;
+  }
+  @if $children == false {
+    margin-bottom: $margin;
+  }
+  @if $children == true {
+    & + & {
+      margin-top: $margin;
+    }
+  }
+}

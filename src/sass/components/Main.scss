@@ -1,0 +1,27 @@
+.main {
+  width: 100%;
+  margin-bottom: 100px;
+  //min-height: 785px;
+  //@include point(lg-md) {
+  //  min-height: 680px;
+  //}
+  //@include point(md-ms) {
+  //  min-height: 550px;
+  //}
+  &-slide {
+    width: 100vw;
+    min-height: 785px;
+    @include point(lg-md) {
+      min-height: 680px;
+    }
+    @include point(md-ms) {
+      min-height: 500px;
+    }
+    @include point(ms-xs) {
+      min-height: 400px;
+    }
+    //&_bg {
+    //
+    //}
+  }
+}

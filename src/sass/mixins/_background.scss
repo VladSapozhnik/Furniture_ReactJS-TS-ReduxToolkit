@@ -1,0 +1,3 @@
+@mixin background($img-name, $nameFolder: '/'){
+  background: url("../../images#{$nameFolder}#{$img-name}.jpg")no-repeat center/cover;
+}

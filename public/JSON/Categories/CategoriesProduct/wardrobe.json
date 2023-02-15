@@ -1,0 +1,62 @@
+[
+  {
+    "id": 25,
+    "src": "1.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Шафа Рамона",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 26,
+    "src": "2.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Шафа Честер",
+    "price": 8999,
+    "stockPrice": 8999
+  },
+  {
+    "id": 27,
+    "src": "3.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Шафа Венеція люкс",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 28,
+    "src": "4.jpg",
+    "isNew": true,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Шафа Імперія",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 29,
+    "src": "5.jpg",
+    "isNew": false,
+    "isStock": false,
+    "isHitSale": false,
+    "title": "Шафа Адель",
+    "price": 8999,
+    "stockPrice": null
+  },
+  {
+    "id": 30,
+    "src": "6.jpg",
+    "isNew": false,
+    "isStock": true,
+    "isHitSale": true,
+    "title": "Шафа Атлант",
+    "price": 8999,
+    "stockPrice": 8999
+  }
+]

@@ -1,0 +1,26 @@
+.about {
+  margin-bottom: 100px;
+  &_title {
+    @include title-h2(50px);
+  }
+
+  &-holder {
+    @include point(def-xs) {
+      flex-direction: column;
+    }
+    &_pic {
+      height: 675px;
+      @include point(hd-xl) {
+        height: 600px;
+      }
+      @include point(xl-xs) {
+        height: 500px;
+      }
+      @include point(def-xs) {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
+

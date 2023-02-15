@@ -1,0 +1,49 @@
+//@import '~svg-spritemap-webpack-plugin/sprites.scss';
+@import "normalize";
+@import "fonts";
+@import "config";
+//@import "mixins/clearfix";
+@import "mixins/breakpoints";
+@import "mixins/background";
+@import "mixins/grid-elements";
+@import "mixins/burger-menu-icon";
+@import "mixins/list-reset";
+@import "mixins/not-last-child";
+@import "mixins/icon-style";
+@import "mixins/item-img";
+@import "mixins/btn-style";
+@import "mixins/text-size";
+@import "mixins/hover-style";
+@import "mixins/input-style";
+@import "mixins/title-h2";
+@import "mixins/line-green";
+@import "mixins/p-style";
+@import "grid";
+@import "base";
+@import "helpers";
+
+//components
+@import "components/Header";
+@import "components/Main";
+@import "components/Advantage";
+@import "components/Categories";
+@import "components/About";
+@import "components/Contacts";
+@import "components/Footer";
+
+//container
+@import "containers/Social";
+@import "containers/Menu";
+@import "containers/PhoneMenu";
+@import "containers/ProductSelection";
+@import "containers/Logo";
+@import "containers/MenuMobile";
+@import "containers/Basket";
+@import "containers/MainContent";
+@import "containers/AdvantageItem";
+@import "containers/CategoriesSelect";
+@import "containers/CategoriesProduct";
+@import "containers/AboutContent";
+@import "containers/ContactsContent";
+@import "containers/FooterMenu";
+@import "containers/FooterContacts";

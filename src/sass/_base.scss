@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    //background-color: $background-color;
+    font-family: $font-family;
+    font-size: $font-size-paragraph;
+    color: $dark;
+
+    .wrap {
+        flex: 1 0 auto;
+    }
+
+    .competition-wrap {
+        padding-top: 140px;
+        @include point(mg-def) {
+            padding-top: 115px;
+        }
+        @include point(def-down) {
+            padding-top: 78px;
+        }
+    }
+
+    #app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+ul:not([class]), ol:not([class]) {
+    list-style-position: outside;
+    margin-bottom: 25px;
+
+    li:not([class]) {
+        margin-bottom: 10px;
+        margin-left: 15px;
+        font-size: $font-size-paragraph;
+    }
+}
+a {
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        text-decoration: none;
+        @if ($link-hover-color != false) {
+            color: $link-hover-color;
+        }
+    }
+
+    img {
+        border: none;
+    }
+}
+
+.validation__input {
+    padding: 14px 15px;
+    @include text-size(18, 400);
+    border: 1px solid #1E2E36;
+    border-radius: 3px;
+    &::placeholder {
+        color: (#1E2E36, 0.6);
+    }
+}
+

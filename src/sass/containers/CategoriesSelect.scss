@@ -1,0 +1,24 @@
+.select-item {
+  cursor: pointer;
+  //width: 0.1666666667%;
+  //padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 140px;
+  @include text-size(24);
+
+  //.swiper-pagination {
+  //  bottom: 0px !important;
+  //}
+  &.active {
+    color: $green;
+    .select-item_pic {
+      filter: invert(67%) sepia(69%) saturate(350%) hue-rotate(107deg) brightness(88%) contrast(90%);
+    }
+  }
+  &_pic {
+    margin-bottom: 10px;
+  }
+}
