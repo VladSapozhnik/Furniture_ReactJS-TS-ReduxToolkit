@@ -1,56 +1,20 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import { Navigation } from 'swiper';
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import AdvantageItem from "../container/AdvantageItem";
+import {useAppDispatch, useAppSelector} from "../hook";
+import {fetchAdvantage} from "../../store/AdvantageSlice";
 
-interface IAdvantage {
-    id: number,
-    src: string,
-    title: string,
-    description: string
-}
 
 const Advantage:FC = () => {
-    const advantageArray: IAdvantage[] = [
-        {
-            "id": 1,
-            "src": "1.jpg",
-            "title": "Меблі преміум класу",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        },
-        {
-            "id": 2,
-            "src": "2.jpg",
-            "title": "Надійність",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        },
-        {
-            "id": 3,
-            "src": "3.jpg",
-            "title": "Безкоштовна доставка",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        },
-        {
-            "id": 4,
-            "src": "1.jpg",
-            "title": "Меблі преміум класу",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        },
-        {
-            "id": 5,
-            "src": "2.jpg",
-            "title": "Надійність",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        },
-        {
-            "id": 6,
-            "src": "3.jpg",
-            "title": "Безкоштовна доставка",
-            "description": "За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України"
-        }
-    ]
+    const dispatch = useAppDispatch();
+    const advantageArray = useAppSelector(state => state.advantage.advantageArray);
+
+    useEffect(() => {
+        dispatch(fetchAdvantage());
+    }, [dispatch])
 
     return (
         <div className="advantage">
@@ -65,20 +29,10 @@ const Advantage:FC = () => {
                         380: {
                             slidesPerView: 1,
                         },
-                        // 540: {
-                        //     slidesPerView: 2,
-                        // },
-                        // 798: {
-                        //     slidesPerView: 1,
-                        // },
                         960: {
                             spaceBetween: 30,
                             slidesPerView: 2,
                         },
-                        // 1280: {
-                        //     spaceBetween: 30,
-                        //     slidesPerView: 2
-                        // },
                         1600: {
                             spaceBetween: 30,
                             slidesPerView: 3

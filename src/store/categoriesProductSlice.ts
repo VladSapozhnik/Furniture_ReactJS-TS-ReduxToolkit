@@ -1,4 +1,5 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
+import axios from 'axios';
 
 
 type IProduct = {
@@ -12,27 +13,49 @@ type IProduct = {
     stockPrice: number | null
 }
 
+type ICategoriesSelect = {
+    id: number,
+    src: string,
+    title: string,
+    name: string
+}
+
 type IProductState = {
     productArray: IProduct[],
+    productSelect: ICategoriesSelect[],
     status: null | string
 }
 
 const initialState: IProductState = {
     productArray: [],
+    productSelect: [],
     status: null
 }
 
 export const fetchCategoriesProduct = createAsyncThunk<IProduct[], string, {rejectValue: string}>(
     'product/fetchProduct',
-    async function (categoryProduct = "sofas", {rejectWithValue}) {
+    async (categoryProduct = "sofas", {rejectWithValue}) => {
         try {
-            const response = await fetch(`./JSON/Categories/CategoriesProduct/${categoryProduct}.json`);
-            return response.json()
+            const response = await axios.get(`./JSON/Categories/CategoriesProduct/${categoryProduct}.json`);
+            return response.data;
         } catch (error: any) {
             rejectWithValue(error.message)
         }
     }
 )
+
+export const fetchCategoriesSelect = createAsyncThunk<ICategoriesSelect[], void, {rejectValue: string}>(
+    'product/fetchSelect',
+    async (_, {rejectWithValue}) => {
+        try {
+            const response = await axios.get("./JSON/Categories/CategoriesSelect.json");
+            return response.data;
+        } catch (error: any) {
+            rejectWithValue(error.message)
+        }
+    }
+);
+
 export const CategoriesProductSlice = createSlice({
     name: 'product',
     initialState,
@@ -45,6 +68,13 @@ export const CategoriesProductSlice = createSlice({
             .addCase(fetchCategoriesProduct.fulfilled, (state, action:PayloadAction<IProduct[]>) => {
                 state.status = "resolved";
                 state.productArray = action.payload;
+            })
+            .addCase(fetchCategoriesSelect.pending, (state) => {
+                state.status = "loading";
+            })
+            .addCase(fetchCategoriesSelect.fulfilled, (state, action) => {
+                state.status = "resolved";
+                state.productSelect = action.payload;
             })
     }
 })

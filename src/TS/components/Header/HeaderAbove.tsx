@@ -16,7 +16,7 @@ const HeaderAbove:FC = () => {
                 <div className={`open-popup ${isOpen === true ? "active" : ""}`} onClick={() => setIsOpen(prev => !prev)}>
                     <span></span>
                 </div>
-                <MenuMobile className="_trans-x-100" isOpen={isOpen} closePopuo={setIsOpen}>
+                <MenuMobile className="_trans-x-100" isOpen={isOpen} closePopup={setIsOpen}>
                     <Menu/>
                 </MenuMobile>
             </div>

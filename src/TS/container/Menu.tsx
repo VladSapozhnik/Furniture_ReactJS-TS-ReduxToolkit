@@ -1,44 +1,18 @@
-import {FC} from "react";
-
-interface IMenu {
-    id: number,
-    href: string,
-    title: string
-}
+import {FC, useEffect} from "react";
+import {useAppDispatch, useAppSelector} from "../hook";
+import {fetchMenuSlice} from "../../store/menuSlice";
 
 interface IProps {
     className?: string
 }
 
 const Menu:FC<IProps> = ({className = ""}) => {
+    const dispatch = useAppDispatch();
+    const menuArray = useAppSelector(state => state.menu.menu);
 
-    const menuArray: IMenu[] = [
-        {
-            "id": 1,
-            "href": "#/",
-            "title": "Головна"
-        },
-        {
-            "id": 2,
-            "href": "#/",
-            "title": "АкцІї"
-        },
-        {
-            "id": 3,
-            "href": "#/",
-            "title": "Доставка та оплата"
-        },
-        {
-            "id": 4,
-            "href": "#/",
-            "title": "про нас"
-        },
-        {
-            "id": 5,
-            "href": "#/",
-            "title": "контакти"
-        },
-    ]
+    useEffect(() => {
+        dispatch(fetchMenuSlice());
+    }, [dispatch])
 
     return (
         <ul className={`menu ${className} _f _list-none`}>

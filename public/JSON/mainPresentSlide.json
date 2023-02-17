@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "src": "main-slider-bg.jpg",
+    "href": "/#",
+    "title": "Новинка!",
+    "subtitle": "Ліжко Ornella",
+    "description": "Це новий рівень комфортного сну"
+  },
+  {
+    "id": 2,
+    "src": "main-slider-bg.jpg",
+    "href": "/#",
+    "title": "Новинка2!",
+    "subtitle": "Ліжко Ornella",
+    "description": "Це новий рівень комфортного сну"
+  },
+  {
+    "id": 3,
+    "src": "main-slider-bg.jpg",
+    "href": "/#",
+    "title": "Новинка3!",
+    "subtitle": "Ліжко Ornella",
+    "description": "Це новий рівень комфортного сну"
+  },
+  {
+    "id": 4,
+    "src": "main-slider-bg.jpg",
+    "href": "/#",
+    "title": "Новинка4!",
+    "subtitle": "Ліжко Ornella",
+    "description": "Це новий рівень комфортного сну"
+  }
+]

@@ -1,11 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
 import categoriesProductSlice from "./categoriesProductSlice";
+import menuSlice from "./menuSlice";
+import advantageSlice from "./AdvantageSlice";
+import mainPresent from "./MainSlice";
+import aboutContent from "./aboutSlice";
+
 const store = configureStore({
     reducer: {
         categoriesProduct: categoriesProductSlice,
-        // assortment: assortment,
-        // advantage: advantage,
-        // navigate: navigate
+        menu: menuSlice,
+        advantage: advantageSlice,
+        mainPresent,
+        aboutContent
     },
 });
 

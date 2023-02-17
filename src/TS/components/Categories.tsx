@@ -1,5 +1,5 @@
 import {FC, useEffect, useState} from "react";
-import {fetchCategoriesProduct} from "../../store/categoriesProductSlice";
+import {fetchCategoriesProduct, fetchCategoriesSelect} from "../../store/categoriesProductSlice";
 import CategoriesSelect from "../container/CategoriesSelect";
 import CategoriesProduct from "../container/CategoriesProduct";
 import {Pagination} from "swiper";
@@ -7,63 +7,23 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css/pagination";
 import {useAppDispatch, useAppSelector} from "../hook";
 
-interface ICategoriesSelectArray {
-    id: number,
-    src: string,
-    title: string,
-    name: string
-}
 
 const Categories: FC = () => {
     const [isActive, setIsActive] = useState<number>(0);
     const [nameProduct, setNameProduct] = useState<string>("sofas");
 
-
     const dispatch = useAppDispatch();
+
     const productArray = useAppSelector(state => state.categoriesProduct.productArray);
+    const productSelect  = useAppSelector(state => state.categoriesProduct.productSelect);
+
+    useEffect(() => {
+        dispatch(fetchCategoriesSelect());
+    }, [dispatch])
 
     useEffect(() => {
         dispatch(fetchCategoriesProduct(nameProduct));
     }, [dispatch, nameProduct])
-
-    const categoriesSelectArray: ICategoriesSelectArray[] = [
-        {
-            "id": 1,
-            "src": "1.svg",
-            "title": "Дивани",
-            "name": "sofas"
-        },
-        {
-            "id": 2,
-            "src": "2.svg",
-            "title": "Ліжка",
-            "name": "beds"
-        },
-        {
-            "id": 3,
-            "src": "3.svg",
-            "title": "Крісла",
-            "name": "chairs"
-        },
-        {
-            "id": 4,
-            "src": "4.svg",
-            "title": "Комоди",
-            "name": "dressers"
-        },
-        {
-            "id": 5,
-            "src": "5.svg",
-            "title": "Шафи",
-            "name": "wardrobe"
-        },
-        {
-            "id": 6,
-            "src": "6.svg",
-            "title": "Кухня",
-            "name": "kitchen"
-        },
-    ]
 
     const handlerClick = (number: number, name: string): void => {
         setIsActive(number);
@@ -109,7 +69,7 @@ const Categories: FC = () => {
                             },
                         }}
                     >
-                        {categoriesSelectArray.map((item, index) =>
+                        {productSelect.map((item, index) =>
                             <SwiperSlide key={item.id}>
                                 <CategoriesSelect
                                     src={item.src}
